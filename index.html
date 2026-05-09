@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-image: url(img/bgMom4.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 400px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input,
+        select {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .button {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: pink;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Bem Vindo!!!</h1>
+
+        <form>
+
+            <input type="text" name="nome" placeholder="Informe seu nome">
+
+            <select name="opcao">
+                <option value="">Selecione</option>
+                <option value="MAE">MÃE</option>
+                <option value="PAI">PAI</option>
+            </select>
+
+            <input type="button" value="ENTRAR" onclick="verificar(nome.value, opcao.value)" class="button">
+
+        </form>
+
+        <script>
+
+            function verificar(n, o) {
+
+                var nome = n;
+                var opcao = o;
+
+                if (nome == "" || opcao == "") {
+
+                    alert("Preencha todos os campos!");
+
+                }
+                else if (opcao == "MAE") {
+                    alert("Bem Vinda!!! "+nome);
+
+                    window.location.href = "mae.html";
+
+                }
+                else {
+
+                    alert("Eu também te amo muito!!! Mas essa página é só para a mãe rsrs!!!");
+
+                }
+
+            }
+
+        </script>
+</body>
+
+</html>

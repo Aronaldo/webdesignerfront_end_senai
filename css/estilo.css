@@ -1,0 +1,186 @@
+/*importação de fontes do google*/
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Comforter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&family=Playwrite+AR+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CSS de formatação da página*/
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li a {
+    font-family: "Cherry Bomb One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px;
+    font-size: 30pt;
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover {
+    color: crimson;
+}
+
+/*Seletores Padrões*/
+p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 16pt;
+    font-weight: 500;
+    font-style: normal;
+}
+
+img { width: 100%;}
+
+h1 {
+    font-size: 200px; font-family: "Comforter", cursive;font-weight: 400;
+    font-style: normal; color: crimson;margin: 0; font-size: 30pt;
+}
+
+/*Classes de CSS .nome #nome*/
+.container-fluid {
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+}
+.col{
+    flex: 1;
+}
+.col-1 {
+    width: 50%;
+    padding: 10px;
+}
+
+.col-2 {
+    width: 40%;
+    padding: 10px;
+}
+
+.col-3 {
+    width: 30%;
+    padding: 10px;
+}
+
+.col-4 {
+    width: 25%;
+    padding: 5px;
+}
+
+.col-5 {
+    width: 20%;
+    padding: 5px;
+}
+
+.bgTopo {
+    background-color: palevioletred;
+    color: white;text-align: center; list-style: none;
+    margin: 0; padding: 0; width: 100%; display: flex;
+    justify-content: center; align-items: center;
+    position: fixed; top: 0;left: 0;}
+.bgMom1 {
+    height: 800px; background-image: url(../img/bgMom1.png);
+    background-size: cover; background-position: center;
+    background-attachment: fixed;}
+.mom {
+    font-size: 200px; font-family: "Comforter", cursive;font-weight: 400;
+    font-style: normal; color: white;margin: 0; height: 100vh;
+    display: flex; justify-content: center; align-items: center;   
+}
+
+.bgMom2 {
+    height: 800px;
+    background-image: url(../img/bgMom4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+.bgMom3{
+    background-image: url(../img/bgHearts.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+
+.bgRodape {
+    
+    color: white;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    /* centro horizontal */
+    align-items: end;
+    /* centro vertical */
+}
+.bgCor{
+    background-color: rgb(163, 41, 65);
+    text-align: center;
+    color:white;
+}
+.bgCor a{
+    color: white;
+}
+.poema {
+    font-family: "Parisienne", cursive; font-size: 26pt;
+    font-weight: 400;
+    font-style: normal;
+    white-space: pre-line;
+    text-align: center;
+}
+.pag2{
+    text-align: center;
+}
+.music {
+    font-family: "Playwrite AR Guides", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22pt;
+    white-space:pre-line;
+    
+}
+
+
+/*Medias Queries*/
+/*tela de tamanho  médio*/
+@media(max-width:1000px) {}
+
+/*tela de tamanho pequeno*/
+@media(max-width:768px) {
+    .row {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5 {
+        width: 100%;
+        padding: 10px;
+    }
+}
